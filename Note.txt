@@ -8,4 +8,11 @@ https://github.com/Annie-Huang/just-add-marmite
 
 C:\react>npx create-next-app just-add-marmite -e https://github.com/iamshaunjp/next-contentful/tree/lesson-1-starter-site
 
+C:\react\just-add-marmite>npm uninstall next
+C:\react\just-add-marmite>npm install next
+C:\react\just-add-marmite>npm uninstall react
+C:\react\just-add-marmite>npm install react
+C:\react\just-add-marmite>npm uninstall react-dom
+C:\react\just-add-marmite>npm install react-dom
+
 
