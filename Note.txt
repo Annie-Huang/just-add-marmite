@@ -1,7 +1,7 @@
 Next.js & Contentful Tutorial
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9jClk8wl1yJcN3Zlrr8YSA1
 
-https://github.com/iamshaunjp/next-contentful
+https://github.com/iamshaunjp/next-contentful   <---- each class is in its own branch....
 https://github.com/Annie-Huang/just-add-marmite
 
 https://app.contentful.com/     <<< Login with google account
