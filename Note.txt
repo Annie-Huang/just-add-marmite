@@ -6,11 +6,7 @@ https://github.com/iamshaunjp/next-contentful/issues/2      <---- Have all the i
 https://github.com/Annie-Huang/just-add-marmite
 
 https://app.contentful.com/     <<< Login with google account
-
-Up to:
-Next.js & Contentful Site Build Tutorial #2 - Contentful Models
-https://www.youtube.com/watch?v=otLsndcnqKM&list=PL4cUxeGkcC9jClk8wl1yJcN3Zlrr8YSA1&index=2
-Stopped in here as Author doesn't add the images he upgraded and also didn't give the full content of what he entered in the rich text content section
+https://app.contentful.com/spaces/fg4tueh0pppk/api/keys/7GvByLPP0uUyhlTi9Xwf17      <---- Got go contentful -> settings -> API keys
 
 ====================================================================================================
 
