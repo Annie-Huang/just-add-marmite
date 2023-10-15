@@ -10,6 +10,11 @@ https://app.contentful.com/spaces/fg4tueh0pppk/api/keys/7GvByLPP0uUyhlTi9Xwf17  
 
 ====================================================================================================
 
+http://localhost:3000/
+http://localhost:3000/recipes/avocado-and-marmite-toasty
+
+---------------------------------
+
 C:\react>npx create-next-app just-add-marmite -e https://github.com/iamshaunjp/next-contentful/tree/lesson-1-starter-site
 
 C:\react\just-add-marmite>npm uninstall next
