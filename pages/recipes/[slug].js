@@ -1,6 +1,7 @@
 import { createClient } from 'contentful';
 
-export default function RecipeDetails() {
+export default function RecipeDetails({ recipe }) {
+  console.log(recipe);
   return <div>Recipe Details</div>;
 }
 
