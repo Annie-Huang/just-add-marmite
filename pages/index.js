@@ -2,10 +2,10 @@ import {createClient} from 'contentful';
 
 export default function Recipes({recipes}) {
   console.log(recipes);
-  
+
   return (
     <div className="recipe-list">
-      Recipe List
+      {recipes.map(recipe => <div key={recipe.sys.id}>{recipe.fields.title}</div>)}
     </div>
   )
 }
