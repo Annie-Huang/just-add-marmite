@@ -2,7 +2,7 @@ import { createClient } from 'contentful';
 import RecipeCard from '../components/RecipeCard';
 
 export default function Recipes({ recipes }) {
-  console.log(recipes);
+  console.log('recipes=', recipes);
 
   return (
     <div className='recipe-list'>
