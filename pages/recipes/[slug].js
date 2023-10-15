@@ -1,8 +1,29 @@
 import { createClient } from 'contentful';
+import Image from 'next/image';
 
 export default function RecipeDetails({ recipe }) {
   console.log('recipe=', recipe);
-  return <div>Recipe Details</div>;
+
+  const {
+    featuredImage,
+    title,
+    cookingTime,
+    ingredients,
+    method,
+  } = recipe.fields;
+
+  return (
+    <div>
+      <div className='banner'>
+        <Image
+          src={`https:${featuredImage.fields.file.url}`}
+          width={featuredImage.fields.file.details.image.width}
+          height={featuredImage.fields.file.details.image.height}
+        />
+        <h2>{title}</h2>
+      </div>
+    </div>
+  );
 }
 
 const client = createClient({
