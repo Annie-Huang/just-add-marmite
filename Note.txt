@@ -8,6 +8,8 @@ https://github.com/Annie-Huang/just-add-marmite
 https://app.contentful.com/     <<< Login with google account
 https://app.contentful.com/spaces/fg4tueh0pppk/api/keys/7GvByLPP0uUyhlTi9Xwf17      <---- Got go contentful -> settings -> API keys
 
+https://nextjs.org/docs/pages/api-reference/components/image#domains
+
 ====================================================================================================
 
 http://localhost:3000/
@@ -29,3 +31,8 @@ PS C:\react\just-add-marmite> npm install contentful
 
 ^[a-z0-9]+(?:-[a-z0-9]+)*$
     meaning a-z0-9 and '-' between words. Cannot have special characters, no spaces
+
+
+Error: Invalid src prop (https://images.ctfassets.net/fg4tueh0pppk/5DkXkHMlFAlHGFHYothfwn/813429060f81ffcbcc4ea157b7610733/122213559-b75b6a00-cec6-11eb-81b4-edb085516fb1.png}) on `next/image`, hostname "images.ctfassets.net" is not configured under images in your `next.config.js`
+It means because the image source is coming from "https://images.ctfassets.net" and it's an external source, we need to whitelist this source in order for the <Image> to work...
+Follow the instruction in https://nextjs.org/docs/pages/api-reference/components/image#domains
