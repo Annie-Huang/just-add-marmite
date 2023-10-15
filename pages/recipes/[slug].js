@@ -24,3 +24,20 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
+
+// You will get the param (from getStaticPaths call) from context object
+// export async function getStaticProps(context) {
+export async function getStaticProps({ params }) {
+  // Get only one item where the item's fields.slug === params.slug value
+  // It will always return in an array, even though we know for this there will be only one items matches the params.slug
+  const { items } = await client.getEntries({
+    content_type: 'recipe',
+    'fields.slug': params.slug,
+  });
+
+  return {
+    props: {
+      recipe: items[0],
+    },
+  };
+}
