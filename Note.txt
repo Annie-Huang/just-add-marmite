@@ -9,6 +9,7 @@ https://app.contentful.com/     <<< Login with google account
 https://app.contentful.com/spaces/fg4tueh0pppk/api/keys/7GvByLPP0uUyhlTi9Xwf17      <---- Got go contentful -> settings -> API keys
 
 https://nextjs.org/docs/pages/api-reference/components/image#domains
+https://www.npmjs.com/package/@contentful/rich-text-react-renderer
 
 ====================================================================================================
 
@@ -27,6 +28,7 @@ C:\react\just-add-marmite>npm uninstall react-dom
 C:\react\just-add-marmite>npm install react-dom
 
 PS C:\react\just-add-marmite> npm install contentful
+PS C:\react\just-add-marmite> npm install @contentful/rich-text-react-renderer
 
 
 ^[a-z0-9]+(?:-[a-z0-9]+)*$
