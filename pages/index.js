@@ -34,6 +34,6 @@ export async function getStaticProps() {
     props: {
       recipes: res.items,
     },
-    revalidate: 1, // 1 seconds
+    revalidate: 1, // 1 seconds. Incremental static regeneration only work for existing page. Any new page added into contentful will be work for the [slug] link.
   };
 }
