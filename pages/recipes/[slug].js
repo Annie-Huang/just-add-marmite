@@ -82,10 +82,12 @@ export const getStaticPaths = async () => {
     return { params: { slug: item.fields.slug } };
   });
 
-  // If we get to a path that is not in the paths list, we will show 404 page rather than a fall back page.
+  // If we get to a path that is not in the paths list, with fallback: false, we will show 404 page rather than a fall back page.
+  // If fallback: true. It will allow next.js to load any new added page in contentful while return a fall back version of the component.
+  //   Once I have the data, I will inject the data into the component so user can see it. The way to get the new data is to rerun the getStaticProps method.
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 };
 
