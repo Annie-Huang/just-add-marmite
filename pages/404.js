@@ -1,8 +1,17 @@
-import React from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const NotFound = () => {
   // Try http://localhost:3000/jhdfeiawfe
+
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('/');
+    }, 4000);
+  }, []);
 
   return (
     <div className='not-found'>
