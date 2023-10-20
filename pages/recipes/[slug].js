@@ -104,6 +104,17 @@ export async function getStaticProps({ params }) {
     'fields.slug': params.slug,
   });
 
+  // In case user enter rubbish data into the url
+  // Try http://localhost:3000/recipes/fewafewa
+  if (!items.length) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false, // meaning next time it fetch, it may have the data already.
+      },
+    };
+  }
+
   return {
     props: {
       recipe: items[0],
