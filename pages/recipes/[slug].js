@@ -1,9 +1,12 @@
 import { createClient } from 'contentful';
 import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Skeleton from '../../components/Skeleton';
 
 export default function RecipeDetails({ recipe }) {
   console.log('recipe=', recipe);
+
+  if (!recipe) return <Skeleton />;
 
   const {
     featuredImage,
